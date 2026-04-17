@@ -32,3 +32,17 @@ function formatCategory(category) {
     return category.charAt(0).toUpperCase() + category.slice(1);
 }
 
+function renderArticles(articles) {
+    if (!display) {
+        return;
+    }
+
+    if (!articles.length) {
+        display.innerHTML = "";
+        if (statusText) {
+            statusText.textContent = `No ${currentCategory} news matched your search.`;
+        }
+        return;
+    }
+
+    
