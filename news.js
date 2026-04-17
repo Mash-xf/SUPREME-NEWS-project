@@ -14,3 +14,17 @@ let allArticles = [];
 function buildApiUrl(category) {
     return `https://newsapi.org/v2/top-headlines?country=us&category=${category}&pageSize=12&apiKey=${API_KEY}`;
 }
+function updateActiveCategory(category) {
+    currentCategory = category;
+
+    if (categorySelect) {
+        categorySelect.value = category;
+    }
+
+    if (categoryList) {
+        const chips = categoryList.querySelectorAll(".category-chip");
+        chips.forEach((chip) => {
+            chip.classList.toggle("active", chip.dataset.category === category);
+        });
+    }
+}
