@@ -7,3 +7,7 @@ const categorySelect = document.getElementById("category-select");
 const categoryList = document.getElementById("category-list");
 const statusText = document.getElementById("news-status");
 
+
+let currentCategory = "general";
+let allArticles = [];
+
