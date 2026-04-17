@@ -11,3 +11,6 @@ const statusText = document.getElementById("news-status");
 let currentCategory = "general";
 let allArticles = [];
 
+function buildApiUrl(category) {
+    return `https://newsapi.org/v2/top-headlines?country=us&category=${category}&pageSize=12&apiKey=${API_KEY}`;
+}
