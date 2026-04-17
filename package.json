@@ -1,0 +1,23 @@
+{
+  "name": "supreme-news-project",
+  "version": "1.0.0",
+  "description": "## 🌍 Project Overview **Supreme New** is a web-based application developed by **Felix Macharia** that displays real-time news from all over the world. The platform helps users stay updated with the latest events, trends, and activities happening globally.",
+  "main": "news.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mash-xf/SUPREME-NEWS-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mash-xf/SUPREME-NEWS-project/issues"
+  },
+  "homepage": "https://github.com/Mash-xf/SUPREME-NEWS-project#readme",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  }
+}
