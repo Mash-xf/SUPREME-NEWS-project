@@ -3,7 +3,7 @@ name: Deploy Website
 on:
   push:
     branches:
-      - main   # change if your branch is master
+      - master   # ✅ since your branch is master
 
 jobs:
   deploy:
