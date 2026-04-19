@@ -1,6 +1,5 @@
 // news.test.js - Simple browser-based tests for news app
 
-// Test runner function
 function runTests() {
     console.log('🧪 Running News App Tests...\n');
 
@@ -39,8 +38,11 @@ function runTests() {
         if (!select) throw new Error('Category select not found');
     });
 
-    // Test 4: Search input exists
+    // ✅ FIXED Test 4
     test('Search input should exist', () => {
         const search = document.getElementById('search');
         if (!search) throw new Error('Search input not found');
     });
+
+    console.log(`\n📊 ${testsPassed}/${totalTests} tests passed`);
+}
