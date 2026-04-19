@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main          # runs every time you push to main
+      - master         # runs every time you push to main
   workflow_dispatch:  # lets you trigger it manually from the Actions tab
 
 permissions:
