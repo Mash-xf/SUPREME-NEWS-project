@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPREME NEWS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>  
+    <div class="heading">
+    <h1>SUPREME NEWS</h1>
+    <h3>RELIABLE NEWS FROM ALL OVER THE WORLD.</h3>
+    </div>
+  </header> 
+      <nav>
+        <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="contact.html">CONTACT US</a>
+        </div> 
+    </nav>
+<main>
+      <section class="hero">
+        <div class="hero-copy">
+            <span class="hero-tag">Live newsroom</span>
+            <h2>Follow the biggest stories by category, with visuals that make each headline easier to scan.</h2>
+            <p>
+                Browse business, sports, health, technology, and more from one homepage.
+                Choose a category, search by keyword, and open the full article when something matters to you.
+            </p>
+            <div class="hero-highlights">
+                <span>Top headlines</span>
+                <span>Category filters</span>
+                <span>Article images</span>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <img
+                src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80"
+                alt="Newspapers and coffee on a desk"
+            >
+            <div class="hero-caption">
+                <strong>See today’s top stories at a glance</strong>
+                <span>Visual cards and category sections make the homepage easier to explore.</span>
+            </div>
+        </div>
+    </section>
+    <section class="news-controls">
+        <div class="searchbar">
+            <input type="text" id="search" placeholder="Search headlines, topics, or keywords">
+        </div>
+
+        <div class="category-picker">
+            <select id="category-select" aria-label="Choose news category">
+                <option value="general">General</option>
+                <option value="business">Business</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="health">Health</option>
+                <option value="science">Science</option>
+                <option value="sports">Sports</option>
+                <option value="technology">Technology</option>
+            </select>
+        </div>
+    </section>
+    <section class="toolbar">
+        <button id="fetch-news">SEE TRENDING NEWS</button>
+        <div class="category-list" id="category-list">
+            <button class="category-chip active" data-category="general">General</button>
+            <button class="category-chip" data-category="business">Business</button>
+            <button class="category-chip" data-category="entertainment">Entertainment</button>
+            <button class="category-chip" data-category="health">Health</button>
+            <button class="category-chip" data-category="science">Science</button>
+            <button class="category-chip" data-category="sports">Sports</button>
+            <button class="category-chip" data-category="technology">Technology</button>
+        </div>
+    </section>
+      <p class="news-status" id="news-status">Pick a category or use the button to load the latest headlines.</p>
+    <section id="news-container"></section>
+  </main>
+<footer>
+    <p>&copy; 2026 SUPREME NEWS. All rights reserved.</p>
+</footer>
+<script src="news.js"></script>
+<script src="news.test.js"></script>
+</body>
+</html>
